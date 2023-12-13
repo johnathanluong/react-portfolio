@@ -20,13 +20,13 @@ const Contact = () => {
 
         emailjs.sendForm(
             'service_nhuznjf',
-            'template_n6l6165',
+            'template_ggrki75',
             refForm.current,
             'v0Q7dts-YGgyaS5L-'
         )
         .then(
             () => {
-                alert('Message was successfully send!');
+                alert('Message was successfully sent!');
                 window.location.reload(false);
             },
             () => {
