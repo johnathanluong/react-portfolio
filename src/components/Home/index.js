@@ -6,7 +6,6 @@ import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const nameArray = "Johnathan Luong".split("");
 
     useEffect(() => {
         setTimeout(() => {
@@ -25,7 +24,7 @@ const Home = () => {
                     <span className={`${letterClass} _13`}>I</span> 
                     <span className={`${letterClass} _14`}>'m</span> 
                     <span className={`${letterClass} _14`}> </span> 
-                    <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>
+                    <AnimatedLetters letterClass={letterClass} strArray={"Johnathan Luong".split("")} idx={15}/>
                 </h1>
                 <h2>Computer Science at University of Central Florida</h2>
                 <Link to="/contact" className='flat-button'>Contact Me</Link>
