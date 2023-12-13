@@ -17,10 +17,20 @@ $primary-color: #C3A456;
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Rubik';
+  src: url('/assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Rubik-italic';
+  src: url('/assets/fonts/rubik-italic-variablefont_wght-webfont.woff2') format('woff2');
+}
+
 
 input, 
 textarea {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: Rubik, sans-serif;
 }
 
 
