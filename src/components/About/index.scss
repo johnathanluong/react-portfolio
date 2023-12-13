@@ -1,3 +1,26 @@
+.about-p {
+    color: #C3A456;
+
+    &::before{
+        content: "<p>";
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        position: absolute;
+        margin-top: -17px;
+        opacity: 0.6;
+        line-height: 18px;
+    }
+
+    &::after{
+        content: "</p>";
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        position: absolute;
+        opacity: 0.6;
+        line-height: 18px;
+    }
+}
+
 .stage-cube-cont {
     width: 50%;
     height: 100%;

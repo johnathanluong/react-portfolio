@@ -22,21 +22,23 @@ const About = () => {
                 <h1>
                     <AnimatedLetters letterClass={letterClass} strArray={"About me".split("")} idx={8}/>
                 </h1>
-                <p>
-                    Hello! I'm Johnathan Luong, a passionate computer science student currently enrolled at the University of Central Florida. 
-                    My academic pursuits and coding projects have equipped me with a robust set of skills in development.
-                    I strive to make a meaningful impact in development of the always evolving technologies that drive our lives.
+                <div className='about-p'>
+                    <p>
+                        Hello! I'm Johnathan Luong, a passionate computer science student currently enrolled at the University of Central Florida. 
+                        My academic pursuits and coding projects have equipped me with a robust set of skills in development.
+                        I strive to make a meaningful impact in development of the always evolving technologies that drive our lives.
 
-                </p>
-                <p>
-                    I'm looking for a role in an established company so to gain the opportunity to work with talented individuals.
-                    Learning new technologies and developement skills is an exciting challenge that I am dedicated to pursuing.
-                    My commitment to excellence is evident in my approach to coding and my ability to adapt to new languages and frameworks.
-                </p>
-                <p>
-                    Beyond technical ability, I bring a creative mindset to innovation and a commitment to creating solutions that make a real impact.
-                    I am eager to bring my passion, skills, and dedication to your team!              
-                </p>
+                    </p>
+                    <p>
+                        I'm looking for a role in an established company so to gain the opportunity to work with talented individuals.
+                        Learning new technologies and developement skills is an exciting challenge that I am dedicated to pursuing.
+                        My commitment to excellence is evident in my approach to coding and my ability to adapt to new languages and frameworks.
+                    </p>
+                    <p>
+                        Beyond technical ability, I bring a creative mindset to innovation and a commitment to creating solutions that make a real impact.
+                        I am eager to bring my passion, skills, and dedication to your team!              
+                    </p>
+                </div>
             </div>
 
             <div className='stage-cube-cont'>

@@ -1,13 +1,13 @@
 {
     "portfolio": [
         {
-            "image": "/src/assets/images/cat.png",
+            "image": "portfolio/first/cat.png",
             "title":  "Cat",
             "description": "Stuff i'm talking about for some random reason lol",
             "url": "google.com"
         },
         {
-            "image": "/portfolio/second/picture.png",
+            "image": "portfolio/second/picture.png",
             "title":  "RAH",
             "description": "ITS A DUDE",
             "url": "google.com"
