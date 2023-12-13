@@ -2,6 +2,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -14,6 +15,7 @@ const Home = () => {
     }, [])
 
     return (
+        <>
         <div className='container home-page'>
             <div className='text-zone'>
                 <h1>
@@ -29,6 +31,8 @@ const Home = () => {
                 <Link to="/contact" className='flat-button'>Contact Me</Link>
             </div>
         </div>
+        <Loader type='cube-transition' />
+        </>
     )
 }
 
