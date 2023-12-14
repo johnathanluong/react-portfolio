@@ -40,7 +40,7 @@ const Contact = () => {
             <div className='container contact-page'>
                 <div className='text-zone'>
                     <h1>
-                        <AnimatedLetters letterClass={letterClass} strArray={"Contact Me".split("")} idx={15}/>
+                        <AnimatedLetters letterClass={letterClass} strArray={"Contact Me".split("")} idx={8}/>
                     </h1>
                     <p>
                         If you have any questions or concerns, please don't hesitate to contact me using the form below!
