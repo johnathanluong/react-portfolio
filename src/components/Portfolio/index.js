@@ -2,8 +2,8 @@ import Loader from 'react-loaders';
 import './index.scss';
 import React, { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
-import renderPortfolio from './renderPortfolio';
 import portfolioData from "../../data/portfolio.json"
+import RenderPortfolio from './RenderPortfolio.js';
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -20,7 +20,7 @@ const Portfolio = () => {
                 <h1 className='page-title'>
                     <AnimatedLetters letterClass={letterClass} strArray={"Portfolio".split("")} idx={7} />
                 </h1>
-                <div>{renderPortfolio(portfolioData.portfolio)}</div>
+                <div>{RenderPortfolio(portfolioData.portfolio)}</div>
             </div>
             <Loader type='cube-transition' />
         </>

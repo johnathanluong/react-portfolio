@@ -1,16 +1,17 @@
 {
     "portfolio": [
         {
-            "image": "portfolio/first/cat.png",
-            "title":  "Cat",
-            "description": "Stuff i'm talking about for some random reason lol",
-            "url": "google.com"
+            "cover": "portfolio/first/cat.png",
+            "title":  "Mind Game",
+            "description": "A journey set in the recesses of your mind! Regain your lost memories, fight monsters within, and connect with those you've forgotten!",
+            "portLink": "mindGame"
         },
         {
-            "image": "portfolio/second/picture.png",
-            "title":  "RAH",
-            "description": "ITS A DUDE",
-            "url": "google.com"
+            "cover": "portfolio/mySteamList/cover/cover.png",
+            "title":  "MySteamList.com",
+            "description": "Your one-stop shop to manage your Steam game lists! Finally... a solution to whittling down the backlog!",
+            "url": "https://mysteamlist.com",
+            "portLink": "mySteamList"
         }
     ]
 }
