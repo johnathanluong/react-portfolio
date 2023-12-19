@@ -11,6 +11,7 @@
             "title":  "MySteamList.com",
             "description": "Your one-stop shop to manage your Steam game lists! Finally... a solution to whittling down the backlog!",
             "url": "https://mysteamlist.com",
+            "images": ["portfolio/mySteamList/images/image1.png", "portfolio/mySteamList/images/image2.png", "portfolio/mySteamList/images/image3.png"],
             "portLink": "mySteamList"
         }
     ]
