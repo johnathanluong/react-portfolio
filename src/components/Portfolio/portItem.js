@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './portItem.scss';
 import Loader from 'react-loaders';
 import portfolioData from "../../data/portfolio.json"
@@ -33,7 +33,20 @@ const PortItem = () => {
                 <h1 className='page-title'>
                     <AnimatedLetters letterClass={letterClass} strArray={`${SelectedPort.title}`.split("")} idx={10} />
                 </h1>
-                <Slideshow images={SelectedPort.images}/>
+                <div className='description-zone'>
+                    <div className="description-text" dangerouslySetInnerHTML={{__html: SelectedPort.detailedDescription}} />
+                    {
+                        SelectedPort.images && 
+                        (
+                            <div className='slideshow-container'>
+                                <Slideshow images={SelectedPort.images} />
+                            </div>
+                        )
+                        
+                    }
+                    
+                </div>
+                <Link className="portUrl" to={SelectedPort.url}>Visit</Link>
             </div>
             <Loader type='cube-transition' />
         </>

@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import './index.scss';
 
-const Slideshow = (obj) => {    
+const Slideshow = (images) => {    
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(null);
+
+    var imagesArr = Object.values(images)[0];
 
     function resetTimeout() {
         if(timeoutRef.current) {
@@ -15,7 +17,7 @@ const Slideshow = (obj) => {
         resetTimeout();
         timeoutRef.current = setTimeout(
                 () => (setIndex((prevIndex) => (
-                    prevIndex === obj.images.length - 1 ? 0 : prevIndex + 1
+                    prevIndex === imagesArr.length - 1 ? 0 : prevIndex + 1
                 ),
             )
         ), 2500);
@@ -23,29 +25,29 @@ const Slideshow = (obj) => {
         return () => {
             resetTimeout();
         };
-    }, [index]);
+    }, [index, imagesArr.length]);
 
     return (
-        <div className='slideshow' onClick={console.log(obj)}>
+        <div className='slideshow' onClick={console.log(imagesArr)}>
             <div className='slideshowImages' style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
                 {
-                /* {
-                    obj.images.map((image, idx) => {
+                    imagesArr.map((image, idx) => {
                         return(
                             <div className='slide' key={idx}>
-                                <img className='slideImage' src={image} alt='image' />
+                                <img className='slideImage' src={image} alt='' />
                             </div>
                         )
                     })
-                } */
                 }
             </div>
             <div className='slideshowDots'>
-                {obj.images.map((_, idx) => {
-                    return (
-                        <div key={idx} className={`slideshowDot${index === idx ? " active" : "" }`} onClick={() => { setIndex(idx) } }></div>
-                    )
-                })}
+                {
+                    imagesArr.map((_, idx) => {
+                        return (
+                            <div key={idx} className={`slideshowDot${index === idx ? " active" : "" }`} onClick={() => { setIndex(idx) } }></div>
+                        )
+                    })
+                }
             </div>
         </div>
     )
