@@ -1,17 +1,20 @@
 {
     "portfolio": [
         {
-            "cover": "portfolio/first/cat.png",
+            "cover": "first/cat.png",
             "title":  "Mind Game",
             "description": "A journey set in the recesses of your mind! Regain your lost memories, fight monsters within, and connect with those you've forgotten!",
+            "detailedDescription": "<p>An engrossing top-down 2D turn-based RPG built in Unity using C#. Focused on the journey to regain his lost memories, we follow an amnesiac exploring his mind. All whilst encountering old faces, fighting monsters using rhythmic combat, and traversing through the worlds conjured up by his sub-conscious.</p><p>Mind Game was created for the class, AI for Game Programming at UCF. With a 3 month time limit, our group of 5 people were able to successfully craft a detail rich experience that I truly cherish. My team: Marc Cross, Leah Howells, Lana Perkins, and cinderspectacular are all very talented and hard-working people who made this project possible.</p><p>My role was to develop the overworld components including but not limited to: movement, enemy encounters, world design, interactable NPCs, enemy movement AI, the user interface, and camera movement. Due to the small team, we each had involvement in each other's roles to a degree. I helped in tuning the combat and dialogue systems as well. </p>",
+            "url": "https://github.com/johnathanluong/CAP4053-Mind-Game/tree/main",
             "portLink": "mindGame"
+
         },
         {
-            "cover": "portfolio/mySteamList/cover/cover.png",
+            "cover": "mySteamList/cover/cover.png",
             "title":  "MySteamList.com",
             "description": "Your one-stop shop to manage your Steam game lists! Finally... a solution to whittling down the backlog!",
             "url": "https://mysteamlist.com",
-            "images": [ "portfolio/mySteamList/images/image1.png", "portfolio/mySteamList/images/image2.png", "portfolio/mySteamList/images/image3.png"],
+            "images": [ "images/image1.png", "images/image2.png", "images/image3.png"],
             "detailedDescription": "<p>A web application used to manage your Steam game lists! Users can create customizable lists in which they can add games to, share to other users, and curate to their heart's desire.</p><p>My work was primarily in the API side of things, allowing the front-end team interact with the back-end. I also had a hand in the database work. We pull game data off Steam using their official web API and formatted it to fit the purposes of our website.</p><p>Built by a group of 7 people, my team consisted of: Chris Gagnier, Jack Wilson, James Allen, Jacob Riesterer, Sam Cooper, and Peyton Miller.</p>",
             "portLink": "mySteamList"
         }

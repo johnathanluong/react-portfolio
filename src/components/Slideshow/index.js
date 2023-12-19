@@ -20,7 +20,7 @@ const Slideshow = (images) => {
                     prevIndex === imagesArr.length - 1 ? 0 : prevIndex + 1
                 ),
             )
-        ), 2500);
+        ), 4000);
 
         return () => {
             resetTimeout();

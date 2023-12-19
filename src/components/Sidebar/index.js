@@ -22,13 +22,13 @@ const Sidebar = () => {
                 <NavLink exact="true" activeclassname="active" to="/" onClick={() => setShowNav(false)}>
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={() => setShowNav(false)}>
+                <NavLink exact="true" activeclassname="active" className="about-link" to="/about/" onClick={() => setShowNav(false)}>
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio" onClick={() => setShowNav(false)}>
+                <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio/" onClick={() => setShowNav(false)}>
                     <FontAwesomeIcon icon={faFolderOpen} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={() => setShowNav(false)}>
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact/" onClick={() => setShowNav(false)}>
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                 </NavLink>
                 <FontAwesomeIcon className='closeIcon' icon={faClose} color="#C3A456" size="3x" onClick={() => setShowNav(false)}/>

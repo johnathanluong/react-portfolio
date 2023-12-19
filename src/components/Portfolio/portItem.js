@@ -42,11 +42,10 @@ const PortItem = () => {
                                 <Slideshow images={SelectedPort.images} />
                             </div>
                         )
-                        
                     }
                     
                 </div>
-                <Link className="portUrl" to={SelectedPort.url}>Visit</Link>
+                <Link className="portUrl" to={SelectedPort.url} target="_blank">Visit</Link>
             </div>
             <Loader type='cube-transition' />
         </>

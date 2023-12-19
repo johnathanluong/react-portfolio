@@ -6,7 +6,7 @@ const RenderPortfolio = (portfolio) => {
     const navigate = useNavigate();
 
     const handleItemClick = (item) => {
-        navigate(`/portfolio/${item}`);
+        navigate(`/portfolio/${item}/`);
     }
 
     return (
