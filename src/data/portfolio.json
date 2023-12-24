@@ -1,7 +1,7 @@
 {
     "portfolio": [
         {
-            "cover": "first/cat.png",
+            "cover": "mindGame/cover/cat.png",
             "title":  "Mind Game",
             "description": "A journey set in the recesses of your mind! Regain your lost memories, fight monsters within, and connect with those you've forgotten!",
             "detailedDescription": "<p>An engrossing top-down 2D turn-based RPG built in Unity using C#. Focused on the journey to regain his lost memories, we follow an amnesiac exploring his mind. All whilst encountering old faces, fighting monsters using rhythmic combat, and traversing through the worlds conjured up by his sub-conscious.</p><p>Mind Game was created for the class, AI for Game Programming at UCF. With a 3 month time limit, our group of 5 people were able to successfully craft a detail rich experience that I truly cherish. My team: Marc Cross, Leah Howells, Lana Perkins, and cinderspectacular are all very talented and hard-working people who made this project possible.</p><p>My role was to develop the overworld components including but not limited to: movement, enemy encounters, world design, interactable NPCs, enemy movement AI, the user interface, and camera movement. Due to the small team, we each had involvement in each other's roles to a degree. I helped in tuning the combat and dialogue systems as well. </p>",

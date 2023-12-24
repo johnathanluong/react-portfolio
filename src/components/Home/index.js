@@ -3,6 +3,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
+import HomeSlideshow from './HomeSlideshow';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -28,6 +29,9 @@ const Home = () => {
                 </h1>
                 <h2>Computer Science at University of Central Florida</h2>
                 <Link to="/contact" className='flat-button'>Contact Me</Link>
+            </div>
+            <div className='slideshow-container'>
+                <HomeSlideshow />
             </div>
         </div>
         <Loader type='cube-transition' />

@@ -1,11 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
-import './index.scss';
+import './HomeSlideshow.scss';
+import portfolioData from '../../data/portfolio.json';
+import { Link } from 'react-router-dom';
 
-const Slideshow = (images) => {    
+const HomeSlideshow = () => {    
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(null);
 
-    var imagesArr = Object.values(images)[0];
+    const portfolio = Object.values(portfolioData.portfolio);
+    const urlLast = window.location.href[window.location.href.length - 1];
+
 
     function resetTimeout() {
         if(timeoutRef.current) {
@@ -17,7 +21,7 @@ const Slideshow = (images) => {
         resetTimeout();
         timeoutRef.current = setTimeout(
                 () => (setIndex((prevIndex) => (
-                    prevIndex === imagesArr.length - 1 ? 0 : prevIndex + 1
+                    prevIndex === portfolio.length - 1 ? 0 : prevIndex + 1
                 ),
             )
         ), 4000);
@@ -25,16 +29,18 @@ const Slideshow = (images) => {
         return () => {
             resetTimeout();
         };
-    }, [index, imagesArr.length]);
+    }, [index, portfolio.length]);
 
     return (
-        <div className='slideshow'>
+        <div className='home-slideshow'>
             <div className='slideshowImages' style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
                 {
-                    imagesArr.map((image, idx) => {
+                    portfolio.map((portfolio, idx) => {
                         return(
                             <div className='slide' key={idx}>
-                                <img className='slideImage' src={image} alt='' />
+                                <Link to={`/portfolio/${portfolio.portLink}/`}>
+                                    <img className='slideImage' src={`${urlLast === '/' ? "" : "react-portfolio/"}portfolio/` + portfolio.cover} />
+                                </Link>
                             </div>
                         )
                     })
@@ -42,7 +48,7 @@ const Slideshow = (images) => {
             </div>
             <div className='slideshowDots'>
                 {
-                    imagesArr.map((_, idx) => {
+                    portfolio.map((_, idx) => {
                         return (
                             <div key={idx} className={`slideshowDot${index === idx ? " active" : "" }`} onClick={() => { setIndex(idx) } }></div>
                         )
@@ -53,4 +59,4 @@ const Slideshow = (images) => {
     )
 }
 
-export default Slideshow
+export default HomeSlideshow
