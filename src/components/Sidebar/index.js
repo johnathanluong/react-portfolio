@@ -33,7 +33,7 @@ const Sidebar = () => {
                 </NavLink>
                 <FontAwesomeIcon className='closeIcon' icon={faClose} color="#C3A456" size="3x" onClick={() => setShowNav(false)}/>
             </nav>
-            <ul>
+            <ul className={showNav ? 'mobile-show' : ''}>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/john-luong-069378296/">
                         <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />

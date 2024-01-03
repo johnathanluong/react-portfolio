@@ -178,6 +178,18 @@
             }
         }
 
+        ul {
+            &.mobile-show {
+                display: block;
+                z-index: 2;
+                bottom: 40px;
+            } 
+
+            li{
+                margin: 10px auto;
+            }
+        }
+
         .barsIcon,
         .closeIcon
         {
