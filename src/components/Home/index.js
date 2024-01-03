@@ -29,8 +29,6 @@ const Home = () => {
                 </h1>
                 <h2>Computer Science at University of Central Florida</h2>
                 <Link to="/contact" className='flat-button'>Contact Me</Link>
-            </div>
-            <div className='slideshow-container'>
                 <HomeSlideshow />
             </div>
         </div>

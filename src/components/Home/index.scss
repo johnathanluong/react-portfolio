@@ -4,7 +4,7 @@
         left: 10%;
         top: 50%;
         transform: translateY(-50%);
-        width: 40%;
+        width: 100%;
         max-height: 90%;
     }
     
@@ -73,12 +73,6 @@
     }
 }
 
-.slideshow-container {
-    position: absolute;
-    left: 60%;
-    top: 25%;
-}
-
 @media screen and (max-width: 1200px) {
     .tags, .home-page h1::before, .home-page h1::after  {
         display: none;
@@ -96,7 +90,7 @@
         .flat-button {
             float: none;
             display: block;
-            margin: 20px auto 0 auto;
+            margin: 20px auto 20px auto;
             width: auto;
             text-align: center;
         }        

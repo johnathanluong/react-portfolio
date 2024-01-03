@@ -1,7 +1,10 @@
 .home-slideshow {
+    position: fixed;
+    left: 45%;
     margin: 0 auto;
     overflow: hidden;
-    width: 400px;
+    width: 500px;
+    animation: fadeIn 1s 1.8s backwards;
     
     .slideshowImages{
         white-space: nowrap;
@@ -38,5 +41,13 @@
         .slideshowDot.active {
             background-color: #C3A456;
         }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .home-slideshow {
+        position: relative;
+        left: 0;
+        width: 100%;
     }
 }
