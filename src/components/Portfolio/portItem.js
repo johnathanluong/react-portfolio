@@ -30,6 +30,7 @@ const PortItem = () => {
     return (
         <>
             <div className='container portItem-page'>
+                
                 <h1 className='page-title'>
                     <AnimatedLetters letterClass={letterClass} strArray={`${SelectedPort.title}`.split("")} idx={10} />
                 </h1>
@@ -45,7 +46,11 @@ const PortItem = () => {
                     }
                     
                 </div>
-                <Link className="portUrl" to={SelectedPort.url} target="_blank">Visit</Link>
+                <div className='buttons-zone'>
+                    <Link className="portUrl" to={SelectedPort.url} target="_blank">Visit</Link>
+                    <Link className='backButton' to="/portfolio/">Back</Link>
+                </div>
+                
             </div>
             <Loader type='cube-transition' />
         </>
