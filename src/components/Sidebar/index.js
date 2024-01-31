@@ -35,7 +35,7 @@ const Sidebar = () => {
             </nav>
             <ul className={showNav ? 'mobile-show' : ''}>
                 <li>
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/john-luong-069378296/">
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/johnathan-luong/">
                         <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
                     </a>
                 </li>
