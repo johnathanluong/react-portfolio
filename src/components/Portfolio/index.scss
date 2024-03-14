@@ -26,11 +26,12 @@
 
 	.image-box {
 		position: relative;
-		flex: 1 1 20%;
+		flex: 1 1 calc(50% - 15px);
+		max-width: calc(50% - 0px);
 		height: 500px;
 		overflow: hidden;
 		border-radius: 10px;
-		max-width: calc(50% - 10px);
+		margin-bottom: 10px;
 
 		.portfolio-image {
 			position: absolute;

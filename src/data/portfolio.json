@@ -18,6 +18,16 @@
 			"detailedDescription": "<p>A web application used to manage your Steam game lists! Users can create customizable lists in which they can add games to, share to other users, and curate to their heart's desire.</p><p>My work was primarily in the API side of things, allowing the front-end team interact with the back-end. I also had a hand in the database work. We pull game data off Steam using their official web API and formatted it to fit the purposes of our website.</p><p>Built by a group of 7 people, my team consisted of: Chris Gagnier, Jack Wilson, James Allen, Jacob Riesterer, Sam Cooper, and Peyton Miller.</p>",
 			"portLink": "mySteamList",
 			"id": 2
+		},
+		{
+			"cover": "minesweeper/cover/minesweeper.png",
+			"title": "Minesweeper",
+			"description": "The classic game of Minesweeper built using JavaScript, HTML, and CSS.",
+			"detailedDescription": "<p>A web-based implementation of the classic game Minesweeper. The objective is to clear a rectangular board containing hidden mines without detonating any of them, with help from clues about the number of neighboring mines in each field.</p><p>This project was built using JavaScript for the game logic, HTML for the structure, and CSS for the visual styling. It features a responsive design, allowing for seamless gameplay on various screen sizes.</p><p>Throughout the development process, I focused on creating clean and efficient code, ensuring optimal performance and maintainability. The project helped me enhance my skills in web development, particularly in JavaScript programming and DOM manipulation.</p>",
+			"url": "https://johnathanluong.github.io/minesweeper/",
+			"images": ["images/image1.png", "images/image2.png", "images/image3.png"],
+			"portLink": "minesweeper",
+			"id": 3
 		}
 	]
 }
