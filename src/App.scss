@@ -1,65 +1,57 @@
-$primary-color: #C3A456;
-
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
 @import '~loaders.css/src/animations/cube-transition.scss';
 
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+	font-family: 'Helvetica Neue';
+	src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
 }
 @font-face {
-  font-family: 'La Belle Aurore';
-  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+	font-family: 'La Belle Aurore';
+	src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Coolvetica';
-  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+	font-family: 'Coolvetica';
+	src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Rubik';
-  src: url('/assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2');
+	font-family: 'Rubik';
+	src: url('/assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Rubik-italic';
-  src: url('/assets/fonts/rubik-italic-variablefont_wght-webfont.woff2') format('woff2');
+	font-family: 'Rubik-italic';
+	src: url('/assets/fonts/rubik-italic-variablefont_wght-webfont.woff2') format('woff2');
 }
 
-
-input, 
+input,
 textarea {
-  font-family: Rubik, sans-serif;
+	font-family: Rubik, sans-serif;
 }
-
 
 .loader-active {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  width: 50px;
-  height: 50px;
-  animation: fadeOut 1s 0.4s;
-  animation-fill-mode: forwards;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	width: 50px;
+	height: 50px;
+	animation: fadeOut 1s 0.4s;
+	animation-fill-mode: forwards;
 }
 
 @media screen and (max-width: 1200px) {
+	.loader-active {
+		display: flex;
 
-  .loader-active {
+		justify-content: center;
 
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-    top: 50%;
-    bottom: 50%;
-
-  }
-
+		align-items: center;
+		top: 50%;
+		bottom: 50%;
+	}
 }

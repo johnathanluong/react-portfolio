@@ -1,106 +1,105 @@
-.portItem-page{
-    padding-left: 100px;
-    padding-right: 50px;
-    width: calc(100% - 150px);
-    position: initial;
-    height: 100%;
-    overflow: auto;
+@import '../../colors.scss';
 
-    h1.page-title {
-        margin-left: 100px;
-        margin-top: 100px;
-    }
+.portItem-page {
+	padding-left: 100px;
+	padding-right: 50px;
+	width: calc(100% - 150px);
+	position: initial;
+	height: 100%;
+	overflow: auto;
 
-    .description-zone {
-        display: flex;
-        position: relative;
-        color: #f0f0f7;
-        width: 80%;
-        height: 60%;
-        left: 6%;
-        gap: 200px;
-    }
+	h1.page-title {
+		margin-left: 100px;
+		margin-top: 100px;
+	}
 
-    p {
-        animation: none;
-    }
-    
-    .buttons-zone {
-        display: flex;
-        position: relative;
-        left: 6%;
-        gap: 20px;
+	.description-zone {
+		display: flex;
+		position: relative;
+		color: $primary-text-color;
+		width: 80%;
+		height: 60%;
+		left: 6%;
+		gap: 200px;
+	}
 
-        .portUrl {
-            color: #C3A456;
-            font-size: 13px;
-            font-weight: 400;
-            letter-spacing: 4px;
-            font-family: sans-serif;
-            text-decoration: none;
-            padding: 10px 18px;
-            border: 1px solid #C3A456;
-            animation: fadeIn 1s 1s backwards;
-            white-space: nowrap;
-            position: initial;
+	p {
+		animation: none;
+	}
 
-    
-            &:hover {
-                background: #C3A456;
-                color: #333;
-            }
-        }
-    
-        .backButton {
-            color: #C3A456;
-            font-size: 13px;
-            font-weight: 400;
-            letter-spacing: 4px;
-            font-family: sans-serif;
-            text-decoration: none;
-            padding: 10px 18px;
-            border: 1px solid #C3A456;
-            animation: fadeIn 1s 1s backwards;
-            white-space: nowrap;
-            position: initial;
-            
-    
-            &:hover {
-                background: #C3A456;
-                color: #333;
-            }
-        }
-    }
+	.buttons-zone {
+		display: flex;
+		position: relative;
+		left: 6%;
+		gap: 20px;
+
+		.portUrl {
+			color: $primary-color;
+			font-size: 13px;
+			font-weight: 400;
+			letter-spacing: 4px;
+			font-family: sans-serif;
+			text-decoration: none;
+			padding: 10px 18px;
+			border: 1px solid $primary-color;
+			animation: fadeIn 1s 1s backwards;
+			white-space: nowrap;
+			position: initial;
+
+			&:hover {
+				background: $primary-color;
+				color: #333;
+			}
+		}
+
+		.backButton {
+			color: $primary-color;
+			font-size: 13px;
+			font-weight: 400;
+			letter-spacing: 4px;
+			font-family: sans-serif;
+			text-decoration: none;
+			padding: 10px 18px;
+			border: 1px solid $primary-color;
+			animation: fadeIn 1s 1s backwards;
+			white-space: nowrap;
+			position: initial;
+
+			&:hover {
+				background: $primary-color;
+				color: #333;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 1200px) {
-    .portItem-page{
-        position: initial;
-        height: auto;
-        min-height: auto;
-        padding: 10px;
-        width: 95%;
+	.portItem-page {
+		position: initial;
+		height: auto;
+		min-height: auto;
+		padding: 10px;
+		width: 95%;
 
-        h1.page-title {
-            margin-left: 0;
-            margin-top: 0;
-            font-size: 12vw;
-        }
+		h1.page-title {
+			margin-left: 0;
+			margin-top: 0;
+			font-size: 12vw;
+		}
 
-        .description-zone{
-            position: initial;
-            transform: none;
-            width: 100%;
-            display: block;
-            padding: 10px;
-            box-sizing: border-box;
-        }
+		.description-zone {
+			position: initial;
+			transform: none;
+			width: 100%;
+			display: block;
+			padding: 10px;
+			box-sizing: border-box;
+		}
 
-        .buttons-zone{
-            padding-top: 5px;
-            justify-content: center;
-            left: 0;
-        }
-    }
+		.buttons-zone {
+			padding-top: 5px;
+			justify-content: center;
+			left: 0;
+		}
+	}
 }
-    

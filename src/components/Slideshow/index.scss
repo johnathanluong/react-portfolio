@@ -1,50 +1,52 @@
+@import '../../colors.scss';
+
 .slideshow {
-    margin: 0 auto;
-    overflow: hidden;
-    width: 800px;
-    
-    .slideshowImages{
-        white-space: nowrap;
-        transition: ease 1s;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 800px;
 
-        .slide {
-            display: inline-block;
-            height: 400px;
-            width: 100%;
-            
-            .slideImage {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                overflow: hidden;
-                border-radius: 15px;
-            }
-        }
-    }
+	.slideshowImages {
+		white-space: nowrap;
+		transition: ease 1s;
 
-    .slideshowDots{
-        text-align: center;
+		.slide {
+			display: inline-block;
+			height: 400px;
+			width: 100%;
 
-        .slideshowDot{
-            display: inline-block;
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            cursor: pointer;
-            margin: 15px 7px 0;
-            background-color: #F0F0F7;
-        }
+			.slideImage {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				overflow: hidden;
+				border-radius: 15px;
+			}
+		}
+	}
 
-        .slideshowDot.active {
-            background-color: #C3A456;
-        }
-    }
+	.slideshowDots {
+		text-align: center;
+
+		.slideshowDot {
+			display: inline-block;
+			height: 15px;
+			width: 15px;
+			border-radius: 50%;
+			cursor: pointer;
+			margin: 15px 7px 0;
+			background-color: $primary-text-color;
+		}
+
+		.slideshowDot.active {
+			background-color: $primary-color;
+		}
+	}
 }
 
 @media screen and (max-width: 1200px) {
-    .slideshow {
-        position: relative;
-        left: 0;
-        width: 100%;
-    }
+	.slideshow {
+		position: relative;
+		left: 0;
+		width: 100%;
+	}
 }

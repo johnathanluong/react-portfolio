@@ -1,77 +1,79 @@
+@import '../../colors.scss';
+
 .contact-form {
-    width: 100%;
-    margin-top: 20px;
+	width: 100%;
+	margin-top: 20px;
 
-    ul {
-        padding: 0;
-        margin: 0;
+	ul {
+		padding: 0;
+		margin: 0;
 
-        li {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            margin-bottom: 10px;
-            overflow: hidden;
-            display: block;
-            position: relative;
-            opacity: 0;
-            clear: both;
-            animation: fadeInUp 2s 2s;
-            animation-fill-mode: forwards;
-        }
+		li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			margin-bottom: 10px;
+			overflow: hidden;
+			display: block;
+			position: relative;
+			opacity: 0;
+			clear: both;
+			animation: fadeInUp 2s 2s;
+			animation-fill-mode: forwards;
+		}
 
-        li.half {
-            width: 49%;
-            margin-left: 2%;
-            float: left;
-            clear: none;
+		li.half {
+			width: 49%;
+			margin-left: 2%;
+			float: left;
+			clear: none;
 
-            &:first-child {
-                margin-left: 0;            
-            }
-        }
-    }
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
 
-    input[type='text'],
-    input[type='email'] {
-        width: 100%;
-        border: 0;
-        background: #25548d;
-        height: 50px;
-        font-size: 16px;
-        color: #F0F0F7;
-        padding: 0 20px;
-    }
+	input[type='text'],
+	input[type='email'] {
+		width: 100%;
+		border: 0;
+		background: #25548d;
+		height: 50px;
+		font-size: 16px;
+		color: $primary-text-color;
+		padding: 0 20px;
+	}
 
-    textarea {
-        width: 100%;
-        border: 0;
-        background: #25548d;
-        height: 50px;
-        font-size: 16px;
-        color: #F0F0F7;
-        padding: 20px;
-        min-height: 150px;
-        box-sizing: border-box;
-    }
+	textarea {
+		width: 100%;
+		border: 0;
+		background: #25548d;
+		height: 50px;
+		font-size: 16px;
+		color: $primary-text-color;
+		padding: 20px;
+		min-height: 150px;
+		box-sizing: border-box;
+	}
 
-    .flat-button {
-        color: #c3a456;
-        font-size: 12px;
-        letter-spacing: 3px;
-        text-decoration: none;
-        padding: 8px 10px;
-        border: 1px solid #c3a456;
-        border-radius: 4px;
-        background: 0 0;
-        text-transform: uppercase;
-        float: right;
-        text-align: center;
+	.flat-button {
+		color: $primary-color;
+		font-size: 12px;
+		letter-spacing: 3px;
+		text-decoration: none;
+		padding: 8px 10px;
+		border: 1px solid $primary-color;
+		border-radius: 4px;
+		background: 0 0;
+		text-transform: uppercase;
+		float: right;
+		text-align: center;
 
-        &:hover {
-            background-color: #c3a456;
-            color: #333;
-            cursor: pointer;
-        }
-    }
+		&:hover {
+			background-color: $primary-color;
+			color: #333;
+			cursor: pointer;
+		}
+	}
 }
