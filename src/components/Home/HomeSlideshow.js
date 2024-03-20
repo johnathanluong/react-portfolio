@@ -51,9 +51,9 @@ const HomeSlideshow = () => {
 						<div
 							role='presentation'
 							key={portfolio.id}
-							className={`slideshowDot${index === portfolio.id ? ' active' : ''}`}
+							className={`slideshowDot${index === portfolio.id - 1 ? ' active' : ''}`}
 							onClick={() => {
-								setIndex(portfolio.id);
+								setIndex(portfolio.id - 1);
 							}}
 						></div>
 					);
