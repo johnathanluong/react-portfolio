@@ -23,20 +23,21 @@ const About = () => {
 					</h1>
 					<div className='about-p'>
 						<p>
-							Hello! I'm Johnathan Luong, a passionate computer science student currently enrolled at the University of
-							Central Florida. My academic pursuits and coding projects have equipped me with a robust set of skills in
-							development. I strive to make a meaningful impact in development of the always evolving technologies that
-							drive our lives.
+							Hi there! I'm Johnathan Tuong Luong, a computer science graduate from the University of Central Florida.
+							My academic background and hands-on projects have helped me develop a strong foundation in development,
+							and I’m excited about the constant innovation in technology. I’m eager to contribute to building solutions
+							that make a real difference in the world.
 						</p>
 						<p>
-							I'm looking for a role in an established company so to gain the opportunity to work with talented
-							individuals. Learning new technologies and developement skills is an exciting challenge that I am
-							dedicated to pursuing. My commitment to excellence is evident in my approach to coding and my ability to
-							adapt to new languages and frameworks.
+							I’m currently seeking a role at a company where I can learn from experienced professionals and continue
+							growing my skills. I love tackling new challenges, learning different technologies, and improving my
+							coding practices. I'm committed to delivering high-quality work and adapting to new tools and frameworks
+							as needed.
 						</p>
 						<p>
-							Beyond technical ability, I bring a creative mindset to innovation and a commitment to creating solutions
-							that make a real impact. I am eager to bring my passion, skills, and dedication to your team!
+							While my technical skills are certainly important, I also bring a creative approach to problem-solving.
+							I’m passionate about building solutions that are not only functional but impactful. I’d love the
+							opportunity to bring my skills, passion, and dedication to your team.
 						</p>
 					</div>
 				</div>
