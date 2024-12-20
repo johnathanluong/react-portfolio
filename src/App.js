@@ -5,7 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contacts';
 import Portfolio from './components/Portfolio';
-import PortItem from './components/Portfolio/portItem';
+import PortItem from './components/Portfolio/PortItem';
 
 function App() {
 	return (
