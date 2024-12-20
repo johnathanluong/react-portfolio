@@ -1,17 +1,16 @@
 name: Deploy to Railway
+
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    container: ghcr.io/railwayapp/cli:latest
+    env:
+      SVC_ID: 1e145f0a-61cf-42e8-aadb-98a950410109
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Deploy to Railway
-        run: |
-          curl -sSL https://railway.app/nix/install | sh
-          railway login
-          railway up
+      - uses: actions/checkout@v3
+      - run: railway up --service=${{ env.SVC_ID }}
