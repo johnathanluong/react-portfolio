@@ -1,6 +1,16 @@
 {
 	"portfolio": [
 		{
+			"cover": "capyHabit/cover/cover.png",
+			"title": "Capy Habits",
+			"description": "The one gamified capybara habit tracker!",
+			"detailedDescription": "<p>Capy Habits is a gamified habit tracker web app designed to motivate users to achieve their goals through engaging visual rewards and progression systems. Users can log their habits and set desired completion frequencies (e.g., daily, weekly). Upon logging habit completions, if the desired frequency is met within the specified time period, the habit is marked as complete until the next cycle.</p><p>Users earn experience points and points for reaching their goals. As they level up, points earned per completion increase. A streak system encourages consistency by incentivizing continued engagement with the app.</p><p>Upon completion of a goal, a stack of capybaras will form, where each completion will stack a capybara on the stack. Once the stack becomes tall enough, capybaras will combine to form a larger capybara. This design allows for quick and intuitive visualization of their progress without bloating the screen.</p><br/><p>Tech stack: Next.js, TypeScript, TailwindCSS, Django, PostgreSQL, Railway</p><br/><p>User Flow:</p><p>Registration → Email Verification → Login → Dashboard</p><p>Habit Creation Screen ↔ Dashboard → Habit Modification</p><p>Dashboard ↔ Gacha Screen → Use Points to Roll for Accessories</p><p>Gacha Screen → View Available Accessories</p><p>Dashboard → Capybara Stack Visual</p><p>Dashboard → Capybara Customization Modal → Use available accessories</p>",
+			"url": "https://capy-habit.up.railway.app/",
+			"images": ["images/image1.png", "images/image2.png", "images/image3.png"],
+			"portLink": "capyHabit",
+			"id": 1
+		},
+		{
 			"cover": "misu/cover/misuCover.png",
 			"title": "MiSu v4",
 			"description": "Mi casa es Su casa - The Smart Home Access Control Sharing Mobile App.",
@@ -14,7 +24,7 @@
 				"images/image5.png"
 			],
 			"portLink": "misu",
-			"id": 1
+			"id": 2
 		},
 		{
 			"cover": "mindGame/cover/cat.png",
@@ -23,7 +33,7 @@
 			"detailedDescription": "<p>An engrossing top-down 2D turn-based RPG built in Unity using C#. Focused on the journey to regain his lost memories, we follow an amnesiac exploring his mind. All whilst encountering old faces, fighting monsters using rhythmic combat, and traversing through the worlds conjured up by his sub-conscious.</p><p>Mind Game was created for the class, AI for Game Programming at UCF. With a 3 month time limit, our group of 5 people were able to successfully craft a detail rich experience that I truly cherish. My team: Marc Cross, Leah Howells, Lana Perkins, and cinderspectacular are all very talented and hard-working people who made this project possible.</p><p>My role was to develop the overworld components including but not limited to: movement, enemy encounters, world design, interactable NPCs, enemy movement AI, the user interface, and camera movement. Due to the small team, we each had involvement in each other's roles to a degree. I helped in tuning the combat and dialogue systems as well. </p>",
 			"url": "https://github.com/johnathanluong/Mind-Game-Fork/",
 			"portLink": "mindGame",
-			"id": 2
+			"id": 3
 		},
 		{
 			"cover": "mySteamList/cover/cover.png",
@@ -32,7 +42,7 @@
 			"images": ["images/image1.png", "images/image2.png", "images/image3.png"],
 			"detailedDescription": "<p>A web application used to manage your Steam game lists! Users can create customizable lists in which they can add games to, share to other users, and curate to their heart's desire.</p><p>My work was primarily in the API side of things, allowing the front-end team interact with the back-end. I also had a hand in the database work. We pull game data off Steam using their official web API and formatted it to fit the purposes of our website.</p><p>Built by a group of 7 people, my team consisted of: Chris Gagnier, Jack Wilson, James Allen, Jacob Riesterer, Sam Cooper, and Peyton Miller.</p>",
 			"portLink": "mySteamList",
-			"id": 3
+			"id": 4
 		},
 		{
 			"cover": "minesweeper/cover/minesweeper.png",
@@ -42,7 +52,7 @@
 			"url": "https://johnathanluong.github.io/minesweeper/",
 			"images": ["images/image1.png", "images/image2.png", "images/image3.png"],
 			"portLink": "minesweeper",
-			"id": 4
+			"id": 5
 		}
 	]
 }
